@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCS34725FN
+D TCS34725FN
+F https://ams.com/documents/20143/36005/TCS3472_DS000390_3-00.pdf
+$ENDCMP
+# end doc library

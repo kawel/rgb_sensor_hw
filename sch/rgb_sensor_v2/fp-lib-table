@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TCS34725FN)(type KiCad)(uri D:/HW/RGB_sensor_2/HW/parts/IC_AMS_TCS34725FN)(options "")(descr ""))
+  (lib (name AMS_TCS34725FN)(type KiCad)(uri D:/HW/RGB_sensor_2/HW/parts/IC_AMS_TCS34725FN/eec.pretty)(options "")(descr ""))
+)
