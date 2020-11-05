@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TCS)(type Legacy)(uri D:/HW/RGB_sensor_2/HW/parts/IC_AMS_TCS34725FN/eec.lib)(options "")(descr ""))
+  (lib (name rgb_sensor_v2-rescue)(type Legacy)(uri ${KIPRJMOD}/rgb_sensor_v2-rescue.lib)(options "")(descr ""))
 )
