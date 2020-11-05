@@ -1531,7 +1531,7 @@ Wire Wire Line
 	2350 4150 2350 4050
 Connection ~ 2350 4050
 Text Notes 1050 850  0    50   ~ 0
-Godziny:\n03/11/20 2h setup projektu i schemat\n04/11/20 1h dobranie footprintow
+Godziny:\n03/11/20 2h setup projektu i schemat\n04/11/20 1h dobranie footprintow\n04/11/20 2h5 layout 
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5FA52804
