@@ -1,0 +1,21 @@
+### Module positions - created on 11/05/20 21:40:37 ###
+### Printed by Pcbnew version kicad (5.1.7)-1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val         Package                             PosX       PosY       Rot  Side
+D1        LED         D_0603_1608Metric_Castellated  -179.0000     2.0000    0.0000  bottom
+D2        LED         D_0603_1608Metric_Castellated  -179.0000    10.0000    0.0000  bottom
+D3        LED         D_0603_1608Metric_Castellated  -159.0000     2.0000    0.0000  bottom
+D4        LED         D_0603_1608Metric_Castellated  -159.0000    10.0000    0.0000  bottom
+D5        LED         D_0603_1608Metric_Castellated  -139.0000     2.0000    0.0000  bottom
+D6        LED         D_0603_1608Metric_Castellated  -139.1875    10.0000    0.0000  bottom
+D7        LED         D_0603_1608Metric_Castellated  -119.0000     2.0000    0.0000  bottom
+D8        LED         D_0603_1608Metric_Castellated  -119.0000    10.0000    0.0000  bottom
+D9        LED         D_0603_1608Metric_Castellated   -99.0000     2.0000    0.0000  bottom
+D10       LED         D_0603_1608Metric_Castellated   -99.0000    10.0000    0.0000  bottom
+U1        TCS34725FN  AMS-TCS34725FN-MFG             -179.0000     6.0000    0.0000  bottom
+U2        TCS34725FN  AMS-TCS34725FN-MFG             -159.0000     6.0000    0.0000  bottom
+U3        TCS34725FN  AMS-TCS34725FN-MFG             -139.0000     6.0000    0.0000  bottom
+U4        TCS34725FN  AMS-TCS34725FN-MFG             -119.0000     6.0000    0.0000  bottom
+U5        TCS34725FN  AMS-TCS34725FN-MFG              -99.0000     6.0000    0.0000  bottom
+## End

@@ -36,7 +36,7 @@ F 3 "~" H 6650 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCS:TCS34725FN U1
+L rgb_sensor_v2-rescue:TCS34725FN-TCS U1
 U 1 1 5FA22706
 P 7150 1150
 F 0 "U1" H 7700 1415 50  0000 C CNN
@@ -311,7 +311,7 @@ F 3 "~" H 6650 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCS:TCS34725FN U2
+L rgb_sensor_v2-rescue:TCS34725FN-TCS U2
 U 1 1 5FAF4BF1
 P 7150 3000
 F 0 "U2" H 7700 3265 50  0000 C CNN
@@ -592,7 +592,7 @@ F 3 "~" H 6650 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCS:TCS34725FN U3
+L rgb_sensor_v2-rescue:TCS34725FN-TCS U3
 U 1 1 5FAFD847
 P 7150 4950
 F 0 "U3" H 7700 5215 50  0000 C CNN
@@ -873,7 +873,7 @@ F 3 "~" H 6650 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCS:TCS34725FN U4
+L rgb_sensor_v2-rescue:TCS34725FN-TCS U4
 U 1 1 5FB06D78
 P 7150 6950
 F 0 "U4" H 7700 7215 50  0000 C CNN
@@ -1154,7 +1154,7 @@ F 3 "~" H 6650 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCS:TCS34725FN U5
+L rgb_sensor_v2-rescue:TCS34725FN-TCS U5
 U 1 1 5FB12878
 P 7150 9000
 F 0 "U5" H 7700 9265 50  0000 C CNN
@@ -1418,35 +1418,17 @@ Text GLabel 5450 1550 0    50   BiDi ~ 0
 SDA1
 Text GLabel 5450 1350 0    50   Input ~ 0
 SCL1
-Text GLabel 2250 4750 2    50   Input ~ 0
-LED1
-Text GLabel 2250 4650 2    50   BiDi ~ 0
-SDA1
-Text GLabel 2250 4550 2    50   Input ~ 0
-SCL1
-Text GLabel 2250 4850 2    50   Input ~ 0
-SCL2
-Text GLabel 2250 4950 2    50   BiDi ~ 0
-SDA2
-Text GLabel 2250 5050 2    50   Input ~ 0
-LED2
-Text GLabel 2250 5150 2    50   Input ~ 0
-SCL3
-Text GLabel 2250 5250 2    50   BiDi ~ 0
-SDA3
-Text GLabel 2250 5350 2    50   Input ~ 0
-LED3
-Text GLabel 2250 5450 2    50   Input ~ 0
-SCL4
-Text GLabel 2250 5550 2    50   BiDi ~ 0
-SDA4
-Text GLabel 2250 5650 2    50   Input ~ 0
-LED4
-Text GLabel 2250 5750 2    50   Input ~ 0
-SCL5
 Text GLabel 2250 5850 2    50   BiDi ~ 0
+SDA1
+Text GLabel 2250 5250 2    50   BiDi ~ 0
+SDA4
+Text GLabel 2250 4950 2    50   Input ~ 0
+LED4
+Text GLabel 2250 5150 2    50   Input ~ 0
+SCL5
+Text GLabel 2250 5050 2    50   BiDi ~ 0
 SDA5
-Text GLabel 2250 5950 2    50   Input ~ 0
+Text GLabel 2250 4850 2    50   Input ~ 0
 LED5
 $Comp
 L power:+3.3V #PWR021
@@ -1462,23 +1444,23 @@ $EndComp
 $Comp
 L power:GND #PWR032
 U 1 1 5FB48129
-P 2200 4350
-F 0 "#PWR032" H 2200 4100 50  0001 C CNN
-F 1 "GND" H 2205 4177 50  0000 C CNN
-F 2 "" H 2200 4350 50  0001 C CNN
-F 3 "" H 2200 4350 50  0001 C CNN
-	1    2200 4350
+P 1950 4250
+F 0 "#PWR032" H 1950 4000 50  0001 C CNN
+F 1 "GND" H 1955 4077 50  0000 C CNN
+F 2 "" H 1950 4250 50  0001 C CNN
+F 3 "" H 1950 4250 50  0001 C CNN
+	1    1950 4250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2250 4550 1950 4550
+	2250 4450 1950 4450
 $Comp
 L Connector:Conn_01x20_Male J1
 U 1 1 5FB2920F
 P 1750 4950
 F 0 "J1" H 1858 6031 50  0000 C CNN
 F 1 "Conn_01x20_Male" H 1858 5940 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x10_P2.00mm_Horizontal" H 1750 4950 50  0001 C CNN
+F 2 "Connector_JST:JST_PHD_S20B-PHDSS_2x10_P2.00mm_Horizontal" H 1750 4950 50  0001 C CNN
 F 3 "~" H 1750 4950 50  0001 C CNN
 	1    1750 4950
 	1    0    0    -1  
@@ -1512,18 +1494,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 5950 2250 5950
 Wire Wire Line
-	2200 4450 2200 4350
-Wire Wire Line
-	1950 4250 2200 4250
-Wire Wire Line
-	1950 4350 2200 4350
-Connection ~ 2200 4350
-Wire Wire Line
-	2200 4350 2200 4250
-Wire Wire Line
-	1950 4450 2200 4450
-Connection ~ 2200 4450
-Wire Wire Line
 	2350 4050 1950 4050
 Wire Wire Line
 	1950 4150 2350 4150
@@ -1531,7 +1501,7 @@ Wire Wire Line
 	2350 4150 2350 4050
 Connection ~ 2350 4050
 Text Notes 1050 850  0    50   ~ 0
-Godziny:\n03/11/20 2h setup projektu i schemat\n04/11/20 1h dobranie footprintow\n04/11/20 2h5 layout 
+Godziny:\n03/11/20 2h setup projektu i schemat\n04/11/20 1h dobranie footprintow\n04/11/20 2h5 layout \n05/10/20 1h5 koniec routingu
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5FA52804
@@ -1544,32 +1514,10 @@ F 3 "~" H 15700 9650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Fiducial FID2
-U 1 1 5FA54DCF
-P 12850 9800
-F 0 "FID2" H 12935 9846 50  0000 L CNN
-F 1 "Fiducial" H 12935 9755 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 12850 9800 50  0001 C CNN
-F 3 "~" H 12850 9800 50  0001 C CNN
-	1    12850 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID1
-U 1 1 5FA551AA
-P 12850 9600
-F 0 "FID1" H 12935 9646 50  0000 L CNN
-F 1 "Fiducial" H 12935 9555 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 12850 9600 50  0001 C CNN
-F 3 "~" H 12850 9600 50  0001 C CNN
-	1    12850 9600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5FA56C7E
+L Mechanical:MountingHole H2
+U 1 1 5FA5842C
 P 12000 9800
-F 0 "H4" H 12100 9846 50  0000 L CNN
+F 0 "H2" H 12100 9846 50  0000 L CNN
 F 1 "MountingHole" H 12100 9755 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 12000 9800 50  0001 C CNN
 F 3 "~" H 12000 9800 50  0001 C CNN
@@ -1577,36 +1525,46 @@ F 3 "~" H 12000 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5FA57D28
+L Mechanical:MountingHole H1
+U 1 1 5FA585A6
 P 12000 9600
-F 0 "H3" H 12100 9646 50  0000 L CNN
+F 0 "H1" H 12100 9646 50  0000 L CNN
 F 1 "MountingHole" H 12100 9555 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 12000 9600 50  0001 C CNN
 F 3 "~" H 12000 9600 50  0001 C CNN
 	1    12000 9600
 	1    0    0    -1  
 $EndComp
+Text GLabel 2250 5350 2    50   Input ~ 0
+SCL4
+Text GLabel 2250 4650 2    50   Input ~ 0
+LED3
+Text GLabel 2250 5450 2    50   BiDi ~ 0
+SDA3
+Text GLabel 2250 5550 2    50   Input ~ 0
+SCL3
+Text GLabel 2250 4750 2    50   Input ~ 0
+LED2
+Text GLabel 2250 5650 2    50   BiDi ~ 0
+SDA2
+Text GLabel 2250 5750 2    50   Input ~ 0
+SCL2
+Text GLabel 2250 5950 2    50   Input ~ 0
+SCL1
+Text GLabel 2250 4450 2    50   Input ~ 0
+LED1
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5FA5842C
-P 12000 9400
-F 0 "H2" H 12100 9446 50  0000 L CNN
-F 1 "MountingHole" H 12100 9355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 12000 9400 50  0001 C CNN
-F 3 "~" H 12000 9400 50  0001 C CNN
-	1    12000 9400
-	1    0    0    -1  
+L power:GND #PWR0101
+U 1 1 5FB4CB45
+P 1950 4550
+F 0 "#PWR0101" H 1950 4300 50  0001 C CNN
+F 1 "GND" H 1955 4377 50  0000 C CNN
+F 2 "" H 1950 4550 50  0001 C CNN
+F 3 "" H 1950 4550 50  0001 C CNN
+	1    1950 4550
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5FA585A6
-P 12000 9200
-F 0 "H1" H 12100 9246 50  0000 L CNN
-F 1 "MountingHole" H 12100 9155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 12000 9200 50  0001 C CNN
-F 3 "~" H 12000 9200 50  0001 C CNN
-	1    12000 9200
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	1950 4250 1950 4350
+Connection ~ 1950 4250
 $EndSCHEMATC
