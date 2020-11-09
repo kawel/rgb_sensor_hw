@@ -36,7 +36,7 @@ F 3 "~" H 6650 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgb_sensor_v2-rescue:TCS34725FN-TCS U1
+L rgb_sensor_v2-rescue:TCS34725FN-TCS-rgb_sensor_v2-rescue U1
 U 1 1 5FA22706
 P 7150 1150
 F 0 "U1" H 7700 1415 50  0000 C CNN
@@ -311,7 +311,7 @@ F 3 "~" H 6650 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgb_sensor_v2-rescue:TCS34725FN-TCS U2
+L rgb_sensor_v2-rescue:TCS34725FN-TCS-rgb_sensor_v2-rescue U2
 U 1 1 5FAF4BF1
 P 7150 3000
 F 0 "U2" H 7700 3265 50  0000 C CNN
@@ -592,7 +592,7 @@ F 3 "~" H 6650 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgb_sensor_v2-rescue:TCS34725FN-TCS U3
+L rgb_sensor_v2-rescue:TCS34725FN-TCS-rgb_sensor_v2-rescue U3
 U 1 1 5FAFD847
 P 7150 4950
 F 0 "U3" H 7700 5215 50  0000 C CNN
@@ -873,7 +873,7 @@ F 3 "~" H 6650 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgb_sensor_v2-rescue:TCS34725FN-TCS U4
+L rgb_sensor_v2-rescue:TCS34725FN-TCS-rgb_sensor_v2-rescue U4
 U 1 1 5FB06D78
 P 7150 6950
 F 0 "U4" H 7700 7215 50  0000 C CNN
@@ -1154,7 +1154,7 @@ F 3 "~" H 6650 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgb_sensor_v2-rescue:TCS34725FN-TCS U5
+L rgb_sensor_v2-rescue:TCS34725FN-TCS-rgb_sensor_v2-rescue U5
 U 1 1 5FB12878
 P 7150 9000
 F 0 "U5" H 7700 9265 50  0000 C CNN
@@ -1500,7 +1500,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 4150 2350 4050
 Connection ~ 2350 4050
-Text Notes 1050 850  0    50   ~ 0
+Text Notes 550  950  0    50   ~ 0
 Godziny:\n03/11/20 2h setup projektu i schemat\n04/11/20 1h dobranie footprintow\n04/11/20 2h5 layout \n05/10/20 1h5 koniec routingu
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1

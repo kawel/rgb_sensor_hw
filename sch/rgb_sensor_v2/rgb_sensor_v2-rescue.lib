@@ -1,0 +1,47 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TCS34725FN-TCS-rgb_sensor_v2-rescue
+#
+DEF TCS34725FN-TCS-rgb_sensor_v2-rescue U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "TCS34725FN-TCS-rgb_sensor_v2-rescue" 0 300 50 H V L CNN
+F2 "AMS-TCS34725FN-*" 0 400 50 H I L CNN
+F3 "https://ams.com/documents/20143/36005/TCS3472_DS000390_3-00.pdf" 0 500 50 H I L CNN
+F4 "+70°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-30°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "No" 0 800 50 H I L CNN "automotive"
+F7 "IC" 0 900 50 H I L CNN "category"
+F8 "4309904" 0 1000 50 H I L CNN "ciiva ids"
+F9 "Sensors" 0 1100 50 H I L CNN "device class L1"
+F10 "Optical Sensors" 0 1200 50 H I L CNN "device class L2"
+F11 "unset" 0 1300 50 H I L CNN "device class L3"
+F12 "IC COLOR CONV LIGHT-DGTL 6-DFN" 0 1400 50 H I L CNN "digikey description"
+F13 "TCS34725FNCT-ND" 0 1500 50 H I L CNN "digikey part number"
+F14 "0.7mm" 0 1600 50 H I L CNN "height"
+F15 "Yes" 0 1700 50 H I L CNN "lead free"
+F16 "930993d3669ca24e" 0 1800 50 H I L CNN "library id"
+F17 "AMS" 0 1900 50 H I L CNN "manufacturer"
+F18 "3.6V" 0 2000 50 H I L CNN "max supply voltage"
+F19 "2.7V" 0 2100 50 H I L CNN "min supply voltage"
+F20 "RGBC Color Light Sensing IR Blocking Filter Very High Sensitivity" 0 2200 50 H I L CNN "mouser description"
+F21 "985-TCS34725FN" 0 2300 50 H I L CNN "mouser part number"
+F22 "65-235uA" 0 2400 50 H I L CNN "operating supply current"
+F23 "FN-6" 0 2500 50 H I L CNN "package"
+F24 "1394513476" 0 2600 50 H I L CNN "release date"
+F25 "Yes" 0 2700 50 H I L CNN "rohs"
+F26 "I2C" 0 2800 50 H I L CNN "sensor output"
+F27 "+70°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-30°C" 0 3000 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 900 -500 1 1 0 f
+X VDD 1 100 0 100 R 40 40 1 1 W
+X SCL 2 100 -200 100 R 40 40 1 1 I C
+X GND 3 1000 -400 100 L 40 40 1 1 W
+X NC 4 1000 -200 100 L 40 40 1 1 P
+X ~INT~ 5 1000 0 100 L 40 40 1 1 C
+X SDA 6 100 -400 100 R 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -221,11 +221,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# rgb_sensor_v2-rescue_TCS34725FN-TCS
+# rgb_sensor_v2-rescue_TCS34725FN-TCS-rgb_sensor_v2-rescue
 #
-DEF rgb_sensor_v2-rescue_TCS34725FN-TCS U 0 40 Y Y 1 L N
+DEF rgb_sensor_v2-rescue_TCS34725FN-TCS-rgb_sensor_v2-rescue U 0 40 Y Y 1 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "rgb_sensor_v2-rescue_TCS34725FN-TCS" 0 300 50 H V L CNN
+F1 "rgb_sensor_v2-rescue_TCS34725FN-TCS-rgb_sensor_v2-rescue" 0 300 50 H V L CNN
 F2 "AMS-TCS34725FN-*" 0 400 50 H I L CNN
 F3 "https://ams.com/documents/20143/36005/TCS3472_DS000390_3-00.pdf" 0 500 50 H I L CNN
 F4 "+70°C" 0 600 50 H I L CNN "ambient temperature range high"
