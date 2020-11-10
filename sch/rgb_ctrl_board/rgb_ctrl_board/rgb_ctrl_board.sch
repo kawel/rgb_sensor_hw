@@ -138,14 +138,10 @@ Text GLabel 6900 4600 0    50   Input ~ 0
 SCL2
 Text GLabel 6900 4700 0    50   BiDi ~ 0
 SDA2
-Text GLabel 8500 4300 2    50   Input ~ 0
-LED2
 Text GLabel 8500 4900 2    50   Input ~ 0
 SCL3
 Text GLabel 6900 4500 0    50   BiDi ~ 0
 SDA3
-Text GLabel 8500 4400 2    50   Input ~ 0
-LED3
 Text GLabel 8500 4000 2    50   Input ~ 0
 SCL4
 Text GLabel 8500 4100 2    50   Input ~ 0
@@ -760,7 +756,7 @@ F 3 "~" H 6650 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 650  700  0    50   ~ 0
-06/11/2020 2h postawienie schematu i wymyślenie koncepcji
+06/11/2020 2h postawienie schematu i wymyślenie koncepcji\n07/112020 3h routing
 Text Notes 7350 7500 0    50   ~ 0
 RGB sensor control board
 Wire Wire Line
@@ -1167,4 +1163,8 @@ Text GLabel 10000 3850 0    50   BiDi ~ 0
 SDA4
 Text GLabel 10000 3650 0    50   BiDi ~ 0
 SDA5
+Text GLabel 8500 4300 2    50   Input ~ 0
+LED3
+Text GLabel 8500 4400 2    50   Input ~ 0
+LED2
 $EndSCHEMATC
