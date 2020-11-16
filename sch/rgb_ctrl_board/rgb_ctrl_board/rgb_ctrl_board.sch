@@ -404,62 +404,8 @@ F 3 "" H 1450 4650 50  0001 C CNN
 	1    1450 4650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R3
-U 1 1 5FB19E64
-P 5450 3700
-F 0 "R3" V 5243 3700 50  0000 C CNN
-F 1 "270" V 5334 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5380 3700 50  0001 C CNN
-F 3 "~" H 5450 3700 50  0001 C CNN
-	1    5450 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED Rx1
-U 1 1 5FB1B0EC
-P 5450 3400
-F 0 "Rx1" V 5489 3282 50  0000 R CNN
-F 1 "LED" V 5398 3282 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 3400 50  0001 C CNN
-F 3 "~" H 5450 3400 50  0001 C CNN
-	1    5450 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5FB22761
-P 5800 3700
-F 0 "R4" V 5593 3700 50  0000 C CNN
-F 1 "270" V 5684 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5730 3700 50  0001 C CNN
-F 3 "~" H 5800 3700 50  0001 C CNN
-	1    5800 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED Tx1
-U 1 1 5FB22B58
-P 5800 3400
-F 0 "Tx1" V 5839 3282 50  0000 R CNN
-F 1 "LED" V 5748 3282 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5800 3400 50  0001 C CNN
-F 3 "~" H 5800 3400 50  0001 C CNN
-	1    5800 3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5450 4550 5450 3850
-Wire Wire Line
-	5800 4650 5800 3850
 Wire Wire Line
 	4100 3650 4100 3450
-Wire Wire Line
-	5800 3150 5800 3250
-Wire Wire Line
-	5450 3250 5450 3150
-Wire Wire Line
-	5450 3150 5600 3150
 $Comp
 L Device:Ferrite_Bead_Small FB1
 U 1 1 5FB2E31C
@@ -493,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3600 6500 3600
 Wire Wire Line
-	6800 3600 7150 3600
+	6800 3600 6950 3600
 $Comp
 L Device:C C2
 U 1 1 5FB3FBA0
@@ -756,7 +702,7 @@ F 3 "~" H 6650 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 650  700  0    50   ~ 0
-06/11/2020 2h postawienie schematu i wymyślenie koncepcji\n07/112020 3h routing
+06/11/2020 2h postawienie schematu i wymyślenie koncepcji\n07/11/2020 3h routing\n10/11/2020 3h5 routing i przygotowanie dokumentacji
 Text Notes 7350 7500 0    50   ~ 0
 RGB sensor control board
 Wire Wire Line
@@ -772,10 +718,6 @@ USART1_TX
 Text Label 4700 3950 0    50   ~ 0
 USART1_Rx
 Wire Wire Line
-	4700 4550 5450 4550
-Wire Wire Line
-	4700 4650 5800 4650
-Wire Wire Line
 	4700 4050 5250 4050
 Wire Wire Line
 	4700 3950 5250 3950
@@ -790,20 +732,6 @@ F 3 "" H 4100 3450 50  0001 C CNN
 	1    4100 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 5FBC980D
-P 5600 3150
-F 0 "#PWR0102" H 5600 3000 50  0001 C CNN
-F 1 "+3.3V" H 5615 3323 50  0000 C CNN
-F 2 "" H 5600 3150 50  0001 C CNN
-F 3 "" H 5600 3150 50  0001 C CNN
-	1    5600 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 5600 3150
-Wire Wire Line
-	5600 3150 5800 3150
 $Comp
 L Device:C C12
 U 1 1 5FBC9E15
@@ -1167,4 +1095,64 @@ Text GLabel 8500 4300 2    50   Input ~ 0
 LED3
 Text GLabel 8500 4400 2    50   Input ~ 0
 LED2
+$Comp
+L Device:R R9
+U 1 1 5FAC3354
+P 6650 3700
+F 0 "R9" V 6650 3600 50  0000 L CNN
+F 1 "10k" H 6720 3655 50  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 3700 50  0001 C CNN
+F 3 "~" H 6650 3700 50  0001 C CNN
+	1    6650 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FAD6D77
+P 6650 3800
+F 0 "R10" V 6650 3700 50  0000 L CNN
+F 1 "10k" V 6750 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 3800 50  0001 C CNN
+F 3 "~" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5FAD8C05
+P 6500 3800
+F 0 "#PWR027" H 6500 3550 50  0001 C CNN
+F 1 "GND" V 6550 3650 50  0000 C CNN
+F 2 "" H 6500 3800 50  0001 C CNN
+F 3 "" H 6500 3800 50  0001 C CNN
+	1    6500 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR026
+U 1 1 5FAD9341
+P 6500 3700
+F 0 "#PWR026" H 6500 3550 50  0001 C CNN
+F 1 "+3.3V" V 6550 3850 50  0000 C CNN
+F 2 "" H 6500 3700 50  0001 C CNN
+F 3 "" H 6500 3700 50  0001 C CNN
+	1    6500 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 3700 6950 3700
+Wire Wire Line
+	6950 3700 6950 3600
+Connection ~ 6950 3600
+Wire Wire Line
+	6950 3600 7150 3600
+Wire Wire Line
+	6800 3800 6950 3800
+Wire Wire Line
+	6950 3800 6950 3700
+Connection ~ 6950 3700
+NoConn ~ 4700 4150
+NoConn ~ 4700 4250
+NoConn ~ 5500 3600
+NoConn ~ 7300 5850
 $EndSCHEMATC
