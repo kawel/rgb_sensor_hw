@@ -1567,4 +1567,6 @@ $EndComp
 Wire Wire Line
 	1950 4250 1950 4350
 Connection ~ 1950 4250
+Text Notes 2600 5100 0    50   ~ 0
+DS1014-20RF1B CONNFLY
 $EndSCHEMATC
