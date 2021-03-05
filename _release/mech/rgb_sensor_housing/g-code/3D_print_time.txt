@@ -1,0 +1,8 @@
+cap_bot 3h 20m
+cap 1h
+google 2x 1h 55m
+support 2x 7h 10m
+missing block 1h
+
+--------------
+23.5h
